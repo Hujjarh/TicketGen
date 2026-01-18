@@ -50,6 +50,10 @@ const App = () => {
           
         )
       }
+
+      <footer className='flex justify-center mt-20'>
+        Developed by<span className='px-2 text-md font-bold text-gray-500'>hujjarh</span>
+      </footer>
       
       </div>
     </div>
