@@ -59,10 +59,10 @@ const Form = ({ setTicketData, setSubmitted }) => {
     <div className='mt-20 flex justify-center'>
       <form onSubmit={handleSubmit} className='text-center '>
         <div className='flex flex-col'>
-            <label htmlFor="name" className='mb-2 text-sm font-medium'>
+            <label htmlFor="name" className='mb-2 text-sm font-medium '>
                 Full Name
             </label>
-            <input type="text" name='name' value={form.name} onChange={handleForm} id='name' placeholder='John Doe' className='rounded-md border border-gray-300 px-4 py-2  focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-5' />
+            <input type="text" name='name' value={form.name} onChange={handleForm} id='name' placeholder='John Doe' className='rounded-md border border-gray-300 px-4 py-2 bg-black  focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-5' />
             {
                 errors.name && <p className='text-red-500 text-sm mb-3'>{errors.name}</p>
             }
@@ -73,7 +73,7 @@ const Form = ({ setTicketData, setSubmitted }) => {
             <label htmlFor="email" className='mb-2 text-sm font-medium'>
                 Email Address
             </label>
-            <input type="email" name='email' value={form.email} onChange={handleForm} id='email' placeholder='John Doe@email.com' className='rounded-md border border-gray-300 px-4 py-2  focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-5' />
+            <input type="email" name='email' value={form.email} onChange={handleForm} id='email' placeholder='John Doe@email.com' className='rounded-md border border-gray-300 px-4 py-2 bg-black focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 mb-5' />
              {
                 errors.email && <p className='text-red-500 text-sm mb-3'>{errors.email}</p>
             }
@@ -83,7 +83,7 @@ const Form = ({ setTicketData, setSubmitted }) => {
             <label htmlFor="github" className='mb-2 text-sm font-medium'>
                 GitHub Username
             </label>
-            <input type="text" name='username' value={form.username}  onChange={handleForm} id='github' className='rounded-md border border-gray-300 px-4 py-2  focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500' />
+            <input type="text" name='username' value={form.username}  onChange={handleForm} id='github' className='rounded-md border border-gray-300 px-4 py-2 bg-black focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500' />
              {
                 errors.username && <p className='text-red-500 text-sm mb-3'>{errors.username}</p>
             }
