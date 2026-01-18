@@ -7,8 +7,21 @@ const App = () => {
   const [ticketData, setTicketData] = useState(null)
   const [submitted, setSubmitted] = useState(false)
   return (
-    <div className=' pt-10 bg-black text-white h-screen bg-[url(/assets/images/background-desktop.png)] bg-cover bg-center'>
-      <div className='bg-[url(/assets/images/pattern-squiggly-line-bottom-desktop.svg)] bg-contain bg-no-repeat bg-size-[auto_200px] bg-bottom-left '>
+    <div className="pt-10 bg-black text-white h-screen 
+  bg-[url(/assets/images/background-mobile.png)] bg-cover bg-center
+  md:bg-[url(/assets/images/background-desktop.png)] bg-cover bg-center">
+
+  <div className="
+    bg-[url(/assets/images/pattern-squiggly-line-bottom-mobile.svg)]
+    bg-no-repeat
+    bg-[position:left_bottom]
+    bg-[length:auto_120px]
+
+    md:bg-[url(/assets/images/pattern-squiggly-line-bottom-desktop.svg),url(/assets/images/pattern-lines.svg),url(/assets/images/pattern-circles.svg)]
+    md:bg-[position:left_bottom,right_top,center]
+    md:bg-[length:auto_200px,auto_150px,auto_120px]
+  ">
+
       
       {
         !submitted ? (
