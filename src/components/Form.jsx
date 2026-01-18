@@ -56,7 +56,7 @@ const Form = ({ setTicketData, setSubmitted }) => {
 
 
   return (
-    <div className='mt-5 flex justify-center'>
+    <div className='mt-10 flex justify-center'>
       <form onSubmit={handleSubmit} className='text-start'>
         <div className='flex flex-col'>
             <label htmlFor="name" className='mb-2 text-sm font-medium '>
